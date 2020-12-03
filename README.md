@@ -1,1 +1,1 @@
-Collection of demo(s) for coflutter.com
+Collection of demo(s) for [Coflutter](https://coflutter.com)
