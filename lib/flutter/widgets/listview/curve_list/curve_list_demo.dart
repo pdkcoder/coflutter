@@ -1,4 +1,4 @@
-import 'package:coflutter/flutter/curve_list/curve_list_item.dart';
+import 'package:coflutter/flutter/widgets/listview/curve_list/curve_list_item.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(CoFlutterApp());

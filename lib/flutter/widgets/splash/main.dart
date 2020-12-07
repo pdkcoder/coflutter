@@ -1,4 +1,4 @@
-import 'package:coflutter/flutter/splash/splash_screen.dart';
+import 'package:coflutter/flutter/widgets/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

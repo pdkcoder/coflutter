@@ -1,4 +1,4 @@
-import 'package:coflutter/flutter/splash/home_screen.dart';
+import 'package:coflutter/flutter/widgets/splash/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
