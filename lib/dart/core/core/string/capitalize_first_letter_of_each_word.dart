@@ -1,9 +1,12 @@
 void main() {
   String test = 'this is coflutter';
+  String test1 = 'this is(more than    1 space to here)coflutter';
   print(convertToTitleCase(test));
 
   // Test extension
   print(test.toTitleCase());
+
+  print(test1.toTitleCase());
 }
 
 String convertToTitleCase(String text) {
@@ -20,10 +23,13 @@ String convertToTitleCase(String text) {
 
   // Capitalize first letter of each words
   final capitalizedWords = words.map((word) {
-    final String firstLetter = word.substring(0, 1).toUpperCase();
-    final String remainingLetters = word.substring(1);
+    if (word.trim().isNotEmpty) {
+      final String firstLetter = word.trim().substring(0, 1).toUpperCase();
+      final String remainingLetters = word.trim().substring(1);
 
-    return '$firstLetter$remainingLetters';
+      return '$firstLetter$remainingLetters';
+    }
+    return '';
   });
 
   // Join/Merge all words back to one String
