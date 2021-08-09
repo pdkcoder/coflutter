@@ -35,7 +35,7 @@ class _StatelessWidgetDemoState extends State<StatelessWidgetDemo> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {
                       _showMaterialDialog();
                     },
@@ -44,7 +44,7 @@ class _StatelessWidgetDemoState extends State<StatelessWidgetDemo> {
                   SizedBox(
                     height: 20,
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {
                       _showCupertinoDialog();
                     },
@@ -53,7 +53,7 @@ class _StatelessWidgetDemoState extends State<StatelessWidgetDemo> {
                   SizedBox(
                     height: 20,
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {
                       _showSimpleDialog();
                     },
@@ -70,14 +70,14 @@ class _StatelessWidgetDemoState extends State<StatelessWidgetDemo> {
         builder: (context) {
           return AlertDialog(
             title: Text('Material Dialog'),
-            content: Text('This is the content of the material dialog'),
+            content: Text('Hey! I am Coflutter!'),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                   onPressed: () {
                     _dismissDialog();
                   },
                   child: Text('Close')),
-              FlatButton(
+              TextButton(
                 onPressed: () {
                   print('HelloWorld!');
                   _dismissDialog();
@@ -99,14 +99,14 @@ class _StatelessWidgetDemoState extends State<StatelessWidgetDemo> {
         builder: (context) {
           return CupertinoAlertDialog(
             title: Text('Cupertino Dialog'),
-            content: Text('This is the content of the cupertino dialog'),
+            content: Text('Hey! I am Coflutter!'),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                   onPressed: () {
                     _dismissDialog();
                   },
                   child: Text('Close')),
-              FlatButton(
+              TextButton(
                 onPressed: () {
                   print('HelloWorld!');
                   _dismissDialog();
